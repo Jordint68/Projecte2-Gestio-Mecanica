@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "M+Rnrphn4SAMSUbWvIKFKlPOFA7KRUhgvBxepbd3QWFwcnqGYPUA5gq20RmWinkiNOPVEn/3QlNsAcKcVxfHXQ==",
+  "success": true,
+  "projectFilePath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jordi\\.nuget\\packages\\mongodb.bson\\2.24.0\\mongodb.bson.2.24.0.nupkg.sha512",
+    "C:\\Users\\jordi\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\jordi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

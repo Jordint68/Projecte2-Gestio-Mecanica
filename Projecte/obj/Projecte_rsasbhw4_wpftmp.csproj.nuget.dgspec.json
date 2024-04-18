@@ -1,0 +1,276 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Projecte\\Projecte.csproj": {}
+  },
+  "projects": {
+    "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\Interficie Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\Interficie Persistencia.csproj",
+        "projectName": "Interficie Persistencia",
+        "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\Interficie Persistencia.csproj",
+        "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Persistencia\\Capa MongoDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Persistencia\\Capa MongoDB.csproj",
+        "projectName": "Capa MongoDB",
+        "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Persistencia\\Capa MongoDB.csproj",
+        "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\Interficie Persistencia.csproj": {
+                "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\Interficie Persistencia.csproj"
+              },
+              "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\Models.csproj": {
+                "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Projecte\\Projecte.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Projecte\\Projecte.csproj",
+        "projectName": "Projecte",
+        "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Projecte\\Projecte.csproj",
+        "packagesPath": "C:\\Users\\jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Projecte\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Persistencia\\Capa MongoDB.csproj": {
+                "projectPath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Persistencia\\Capa MongoDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

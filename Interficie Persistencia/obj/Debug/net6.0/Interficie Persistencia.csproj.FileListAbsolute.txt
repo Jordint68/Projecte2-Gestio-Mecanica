@@ -1,0 +1,15 @@
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\bin\Debug\net6.0\Interficie Persistencia.deps.json
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\bin\Debug\net6.0\Interficie Persistencia.dll
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\bin\Debug\net6.0\Interficie Persistencia.pdb
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\bin\Debug\net6.0\Models.dll
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\bin\Debug\net6.0\Models.pdb
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.csproj.AssemblyReference.cache
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.AssemblyInfoInputs.cache
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.AssemblyInfo.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.csproj.CoreCompileInputs.cache
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.csproj.CopyComplete
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.dll
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\refint\Interficie Persistencia.dll
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\Interficie Persistencia.pdb
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Interficie Persistencia\obj\Debug\net6.0\ref\Interficie Persistencia.dll

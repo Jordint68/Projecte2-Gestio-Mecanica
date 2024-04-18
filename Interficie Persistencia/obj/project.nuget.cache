@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hWkgVxVgb2ijsPvfFSW6xti9DV/aV6qW7hrcqfF2pgdwaFHWfvhZelrPJ+tDesKGgfUwITdRjBxSv/qYnGSvLA==",
+  "success": true,
+  "projectFilePath": "C:\\programacion\\2n DAM\\Projecte\\Projecte 2\\Projecte 2\\Projecte\\Interficie Persistencia\\Interficie Persistencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jordi\\.nuget\\packages\\mongodb.bson\\2.24.0\\mongodb.bson.2.24.0.nupkg.sha512",
+    "C:\\Users\\jordi\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\jordi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

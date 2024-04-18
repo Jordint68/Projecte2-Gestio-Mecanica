@@ -1,0 +1,47 @@
+﻿<Page x:Class="Projecte.Vistes.pageLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projecte.Vistes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="pageLogin">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="imgLogo" Grid.Row="0" Grid.RowSpan="2" Source="/Assets/logoTaller.png"/>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20,0">
+            <TextBlock Text="Usuari: " FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="txbUsuari" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20,0">
+            <TextBlock Text="Clau de pas: " FontWeight="Bold" HorizontalAlignment="Center"/>
+            <PasswordBox x:Name="txbPassword" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+        <Button x:Name="btnLogin" Grid.Row="4" Click="btnLogin_Click"
+            HorizontalAlignment="Center" VerticalAlignment="Top"
+            Background="#f7d468" Padding="10,3">
+            Iniciar sessió
+        </Button>
+
+        <Image Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Source="/Assets/photo_intro.jpeg" Stretch="UniformToFill">
+        </Image>
+
+    </Grid>
+</Page>
