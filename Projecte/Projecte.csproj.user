@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Vistes\PageGestioLinies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vistes\pageGestioTicket.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,9 +19,15 @@
     <Compile Update="Vistes\pageMechanic.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vistes\pageRecepcionista.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistes\PageGestioLinies.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistes\pageGestioTicket.xaml">
@@ -28,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistes\pageMechanic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistes\pageRecepcionista.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

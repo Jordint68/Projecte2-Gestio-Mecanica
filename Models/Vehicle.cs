@@ -12,19 +12,12 @@ namespace Models
     [BsonIgnoreExtraElements]
     public class Vehicle
     {
-        [BsonId]
         private String id;
-
-        [BsonElement("kms")]
         private int kms;
-
-        [BsonElement("client")]
-        private Client client;
-
-        [BsonElement("marca")]
+        private String client; 
         private Marca marca;
 
-        public Vehicle(String id, int kms, Client client, Marca marca)
+        public Vehicle(String id, int kms, String client, Marca marca)
         {
             this.Id = id;
             this.Kms = kms;
@@ -32,9 +25,18 @@ namespace Models
             this.Marca = marca;
         }
 
+
+        [BsonId]
+        [BsonElement("_id")]
         public String Id { get => id; set => id = value; }
+
+        [BsonElement("kms")]
         public int Kms { get => kms; set => kms = value; }
-        public Client Client { get => client; set => client = value; }
+
+        [BsonElement("client")]
+        public String Client { get => client; set => client = value; }
+
+        [BsonElement("marca")]
         public Marca Marca { get => marca; set => marca = value; }
     }
 }

@@ -6,34 +6,25 @@ namespace Models
     [BsonIgnoreExtraElements]
     public class Serveis
     {
-        [BsonId]
-        private ObjectId id;
-
-        [BsonElement("tipo")]
+        private ObjectId id; 
         private String tipus;
-
-        [BsonElement("descripcio")]
         private String descripcio;
 
-        [BsonElement("preu")]
-        private double preu;
-
-        [BsonElement("hores_realitzades")]
-        private double hores_realitzades;
-
-        public Serveis(ObjectId id, string tipus, string descripcio, double preu, double hores_realitzades)
+        public Serveis(ObjectId id, string tipus, string descripcio)
         {
             this.Id = id;
             this.Tipus = tipus;
             this.Descripcio = descripcio;
-            this.Preu = preu;
-            this.Hores_realitzades = hores_realitzades;
         }
 
+        [BsonId]
+        [BsonElement("_id")]
         public ObjectId Id { get => id; set => id = value; }
+
+        [BsonElement("tipo")]
         public string Tipus { get => tipus; set => tipus = value; }
+
+        [BsonElement("descripcio")]
         public string Descripcio { get => descripcio; set => descripcio = value; }
-        public double Preu { get => preu; set => preu = value; }
-        public double Hores_realitzades { get => hores_realitzades; set => hores_realitzades = value; }
     }
 }

@@ -1,10 +1,3 @@
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte.csproj.AssemblyReference.cache
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageLogin.g.cs
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageMechanic.g.cs
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\App.g.cs
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte_MarkupCompile.cache
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte_MarkupCompile.lref
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debug\net6.0-windows\Projecte.exe
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debug\net6.0-windows\Projecte.dll.config
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debug\net6.0-windows\Projecte.deps.json
@@ -31,7 +24,16 @@ C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debu
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debug\net6.0-windows\Capa MongoDB.pdb
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debug\net6.0-windows\Interficie Persistencia.pdb
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\bin\Debug\net6.0-windows\Models.pdb
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte.csproj.AssemblyReference.cache
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageGestioTicket.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageLogin.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageMechanic.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\App.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte_MarkupCompile.cache
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte_MarkupCompile.lref
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\MainWindow.baml
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageGestioTicket.baml
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageLogin.baml
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageMechanic.baml
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte.g.resources
@@ -45,5 +47,7 @@ C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debu
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte.pdb
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Projecte.genruntimeconfig.cache
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\ref\Projecte.dll
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageGestioTicket.g.cs
-C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageGestioTicket.baml
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\PageGestioLinies.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\PageGestioLinies.baml
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageRecepcionista.g.cs
+C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\obj\Debug\net6.0-windows\Vistes\pageRecepcionista.baml

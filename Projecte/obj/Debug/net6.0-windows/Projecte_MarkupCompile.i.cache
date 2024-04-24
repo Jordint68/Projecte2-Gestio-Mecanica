@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\programacion\2n DAM\Projecte\Projecte 2\Projecte 2\Projecte\Projecte\App.xaml
-4119359285
+61851497617
 
-91786674837
+11-1151490507
 208-266802088
-MainWindow.xaml;Vistes\pageGestioTicket.xaml;Vistes\pageLogin.xaml;Vistes\pageMechanic.xaml;
+MainWindow.xaml;Vistes\PageGestioLinies.xaml;Vistes\pageGestioTicket.xaml;Vistes\pageLogin.xaml;Vistes\pageMechanic.xaml;Vistes\pageRecepcionista.xaml;
 
 True
 

@@ -85,7 +85,7 @@ namespace Projecte.Vistes {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Projecte;V1.0.0.0;component/vistes/pagelogin.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Projecte;component/vistes/pagelogin.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vistes\pageLogin.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

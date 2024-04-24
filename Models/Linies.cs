@@ -1,6 +1,7 @@
 ﻿
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson.Serialization.Serializers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,32 +13,32 @@ namespace Models
 
     [BsonIgnoreExtraElements]
     public class Linies
-    {
-        [BsonId]
+    {   
         private ObjectId id;
-
-        [BsonElement("ticket")]
         private ObjectId ticket;
-
-        [BsonElement("servei")]
         private ObjectId servei;
-
-        [BsonElement("descripcio")]
         private String descripcio;
-
-        [BsonElement("preu")]
-        private double preu;
-
-        [BsonElement("estat")]
+        private Decimal preu;
         private String estat;
-
-        [BsonElement("descompte")]
-        private double descompte;
-
-        [BsonElement("tipus")]
+        private Decimal descompte;
         private String tipus;
+        private Decimal import;
 
-        public Linies(ObjectId id, ObjectId ticket, ObjectId servei, string descripcio, double preu, string estat, double descompte, string tipus)
+        public Linies() {}
+
+        public Linies(ObjectId ticket, ObjectId servei, string descripcio, Decimal preu, string estat, Decimal descompte, string tipus)
+        {
+            this.ticket = ticket;
+            this.servei = servei;
+            this.descripcio = descripcio;
+            this.preu = preu;
+            this.estat = estat;
+            this.descompte = descompte;
+            this.tipus = tipus;
+            this.import = calcularImport(preu, descompte);
+        }
+
+        public Linies(ObjectId id, ObjectId ticket, ObjectId servei, string descripcio, Decimal preu, string estat, Decimal descompte, string tipus)
         {
             this.id = id;
             this.ticket = ticket;
@@ -47,16 +48,37 @@ namespace Models
             this.estat = estat;
             this.descompte = descompte;
             this.Tipus = tipus;
+            this.import = calcularImport(preu, descompte);
+            
         }
 
+        [BsonId]
+        [BsonElement("_id")]
         public ObjectId Id { get => id; set => id = value; }
+
+        [BsonElement("ticket")]
         public ObjectId Ticket { get => ticket; set => ticket = value; }
+
+        [BsonElement("descripcio")]
         public string Descripcio { get => descripcio; set => descripcio = value; }
-        public double Preu { get => preu; set => preu = value; }
+
+        [BsonElement("preu")]
+        public Decimal Preu { get => preu; set => preu = value; }
+
+        [BsonElement("estat")]
         public string Estat { get => estat; set => estat = value; }
-        public double Descompte { get => descompte; set => descompte = value; }
+
+        [BsonElement("descompte")]
+        public Decimal Descompte { get => descompte; set => descompte = value; }
+
+        [BsonElement("tipus")]
         public string Tipus { get => tipus; set => tipus = value; }
+
+        [BsonElement("servei")]
         public ObjectId Servei { get => servei; set => servei = value; }
+
+        [BsonElement("import")]
+        public Decimal Import { get => import; set => import = value; }
 
 
         public List<String> getEstatsDisponibles()
@@ -66,6 +88,20 @@ namespace Models
                 "oberta",
                 "rebutjada"
             };
+        }
+
+        public List<String> getEstatsDisponiblesPerCreacio()
+        {
+            return new List<String>() {
+                "tancada",
+                "oberta"
+            };
+        }
+
+
+        private Decimal calcularImport(Decimal p, Decimal d)
+        {
+            return (p - (p * (d / 100)));
         }
 
 

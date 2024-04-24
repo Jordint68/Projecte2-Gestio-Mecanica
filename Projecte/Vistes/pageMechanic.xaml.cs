@@ -61,7 +61,8 @@ namespace Projecte.Vistes
 
             tickets = gBD.GetTicketsByEstat("obert");
 
-
+            btnNovaLinia.IsEnabled = false;
+            btnEsborrarLinia.IsEnabled = false;
             btnNouEstatLinia.IsEnabled = false;
             btnNouEstatTicket.IsEnabled = false;
             cboModificarLinia.IsEnabled = false;
@@ -80,6 +81,8 @@ namespace Projecte.Vistes
                 linies = gBD.GetLinies(ticketSeleccionat.Id);
                 dtgLinies.ItemsSource = linies;
 
+                btnEsborrarLinia.IsEnabled = false;
+                btnNovaLinia.IsEnabled = true;
                 btnNouEstatLinia.IsEnabled = false;
                 btnNouEstatTicket.IsEnabled = true;
                 cboModificarLinia.IsEnabled = false;
@@ -99,6 +102,8 @@ namespace Projecte.Vistes
             liniaSeleccionada = (Linies)dtgLinies.SelectedItem;
             if(liniaSeleccionada != null)
             {
+                btnEsborrarLinia.IsEnabled = true;
+                btnNovaLinia.IsEnabled = true;
                 btnNouEstatLinia.IsEnabled = true;
                 btnNouEstatTicket.IsEnabled = false;
                 cboModificarLinia.IsEnabled = true;
@@ -117,7 +122,8 @@ namespace Projecte.Vistes
         {
             String newValue = (String)cboModificarLinia.SelectedItem;
             gBD.modificarEstatLinia(liniaSeleccionada.Id, newValue);
-            recarregarDtg();        }
+            recarregarDtg();        
+        }
 
         private void btnNouEstatTicket_Click(object sender, RoutedEventArgs e)
         {
@@ -131,16 +137,36 @@ namespace Projecte.Vistes
             dtgTickets.ItemsSource = null;
             dtgLinies.ItemsSource = null;
             dtgTickets.ItemsSource = gBD.GetTicketsByEstat("obert");
+            btnModificarLinia.IsEnabled = false;
+            btnEsborrarLinia.IsEnabled = false;
         }
 
         private void btnModificarTicket_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.NavigationFrame.Navigate(new pageGestioTicket());
+            MainWindow.NavigationFrame.Navigate(new pageGestioTicket(ticketSeleccionat));
         }
 
         private void btnModificarLinia_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow.NavigationFrame.Navigate(new PageGestioLinies(liniaSeleccionada));
+        }
 
+        private void btnNovaLinia_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.NavigationFrame.Navigate(new PageGestioLinies(ticketSeleccionat));
+        }
+
+        private void btnEsborrarLinia_Click(object sender, RoutedEventArgs e)
+        {
+            // Com s'elimina la linia, el nou preu de la linia és 0.
+            gBD.actualitzarPreuTicket(ticketSeleccionat, liniaSeleccionada.Preu, 0);
+            gBD.esborrarLinia(liniaSeleccionada.Id);
+            recarregarDtg();
+        }
+
+        private void btnNouTicket_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.NavigationFrame.Navigate(new pageGestioTicket());
         }
     }
 }

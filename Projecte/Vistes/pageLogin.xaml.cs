@@ -49,6 +49,7 @@ namespace Projecte.Vistes
             } else if(resultValidateUser == 2)
             {
                 // Si retorna que l'usuari és un recepcionista:
+                MainWindow.NavigationFrame.Navigate(new pageRecepcionista());
 
             }
             else

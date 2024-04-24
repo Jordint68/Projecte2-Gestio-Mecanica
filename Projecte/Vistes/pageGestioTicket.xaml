@@ -12,10 +12,12 @@
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -29,10 +31,15 @@
         <TextBlock Grid.Row="3" Grid.Column="0" Padding="10">Estat:</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="0" Padding="10">Preu final:</TextBlock>
 
-        
-        
-        <Button Grid.Row="5" Grid.Column="0">Cancel·lar canvis</Button>
-        <Button Grid.Row="5" Grid.Column="1">Desar canvis</Button>
-        <Button Grid.Row="5" Grid.Column="2">Esborrar el ticket</Button>
+        <ComboBox x:Name="cboClients" Grid.Row="0" Grid.Column="1" Margin="15" SelectionChanged="cboClients_SelectionChanged"></ComboBox>
+        <ComboBox x:Name="cboVehicles" Grid.Row="1" Grid.Column="1" Margin="15"></ComboBox>
+        <TextBox x:Name="txbObservacions" Grid.Row="2" Grid.Column="1" Margin="5"></TextBox>
+        <ComboBox x:Name="cboEstats" Grid.Row="3" Grid.Column="1" Margin="15"></ComboBox>
+        <TextBox x:Name="txbPreuFinal" Grid.Row="4" Grid.Column="1" Margin="15"></TextBox>
+
+        <Button x:Name="btnCancel" Grid.Row="6" Grid.Column="0" Margin="10" Click="btnCancel_Click">Cancel·lar canvis</Button>
+        <Button x:Name="btnDesarCanvis" Grid.Row="6" Grid.Column="1" Margin="10" Grid.ColumnSpan="2" Click="btnDesarCanvis_Click">Desar canvis</Button>
+        <Button x:Name="btnAfegirNouTicket" Grid.Row="6" Grid.Column="1" Margin="10" Grid.ColumnSpan="2" Click="btnAfegirNouTicket_Click">Afegir nou ticket</Button>
+        <Button x:Name="btnEsborrarTicket" Grid.Row="6" Grid.Column="3" Margin="10" Background="Salmon" Click="btnEsborrarTicket_Click">Esborrar el ticket</Button>
     </Grid>
 </Page>

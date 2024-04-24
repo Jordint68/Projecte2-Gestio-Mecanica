@@ -12,22 +12,11 @@ namespace Models
     [BsonIgnoreExtraElements]
     public class Client
     {
-        [BsonId]
         private String NIF;
-
-        [BsonElement("nom")]
         private String name;
-
-        [BsonElement("cognoms")]
         private String cognoms;
-
-        [BsonElement("correu")]
-        private String eMail;
-
-        [BsonElement("telefon")]
+        private String eMail; 
         private String telefon;
-
-        [BsonElement("adreca")]
         private String adreca;
 
         private String fullName;
@@ -41,11 +30,23 @@ namespace Models
             this.Adreca = adreca;
         }
 
+        [BsonId]
+        [BsonElement("_id")]
         public String NIF1 { get => NIF; set => NIF = value; }
+
+        [BsonElement("nom")]
         public String Name { get => name; set => name = value; }
+
+        [BsonElement("cognoms")]
         public string Cognoms { get => cognoms; set => cognoms = value; }
+
+        [BsonElement("correu")]
         public string EMail { get => eMail; set => eMail = value; }
+
+        [BsonElement("telefon")]
         public string Telefon { get => telefon; set => telefon = value; }
+
+        [BsonElement("adreca")]
         public string Adreca { get => adreca; set => adreca = value; }
         public string FullName { get => this.Cognoms + " " + this.Name; }
 

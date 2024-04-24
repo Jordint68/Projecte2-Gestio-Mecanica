@@ -1,0 +1,81 @@
+﻿<Page x:Class="Projecte.Vistes.pageRecepcionista"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projecte.Vistes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="pageRecepcionista"
+      Loaded="Page_Loaded">
+
+    <GroupBox BorderThickness="2.4" BorderBrush="#f7d468" Header="Recepcionista" Foreground="#f7d468" Margin="10" Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <DataGrid x:Name="dtgTickets" Grid.Row="0" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="dtgTickets_SelectionChanged" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="NIF del client" Binding="{Binding ClientProv.NIF1}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Nom del client" Binding="{Binding ClientProv.FullName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Matricula del vehicle" Binding="{Binding Vehicle.Id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Model del vehicle" Binding="{Binding Vehicle.Marca.Model}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Observacions" Binding="{Binding Observacions}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Data" Binding="{Binding Data_creacio}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Import total" Binding="{Binding Preu_final}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid x:Name="dtgLinies" Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False" SelectionChanged="dtgLinies_SelectionChanged" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Descripcio" Binding="{Binding Descripcio}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Estat" Binding="{Binding Estat}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Import individual" Binding="{Binding Preu}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Descompte" Binding="{Binding Descompte}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Tipus" Binding="{Binding Tipus}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Grid.Row="0" Grid.Column="2" Margin="5" VerticalAlignment="Center" Click="Button_Click">Facturar ticket</Button>
+
+            <StackPanel Orientation="Vertical"  Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="5">
+                <Button x:Name="btnNovaLinia" Margin="0,10" Click="btnNovaLinia_Click">Afegir nova Linia</Button>
+                <Button x:Name="btnEsborrarLinia" Margin="0, 10" Click="btnEsborrarLinia_Click">Esborrar Linia</Button>
+            </StackPanel>
+
+            <Grid Grid.Row="2" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+
+                <ComboBox x:Name="cboModificarLinia" Grid.Row="0" Grid.Column="4" Margin="10"></ComboBox>
+                <ComboBox x:Name="cboModificarTicket" Grid.Row="1" Grid.Column="4" Margin="10"></ComboBox>
+                <Button x:Name="btnNouEstatLinia" Grid.Row="0" Grid.Column="5" Margin="5" Click="btnNouEstatLinia_Click">Modificar Estat Linia</Button>
+                <Button x:Name="btnNouEstatTicket" Grid.Row="1" Grid.Column="5" Margin="5" Click="btnNouEstatTicket_Click">Modificar Estat Tickets</Button>
+
+                <Button x:Name="btnNouTicket" Grid.Row="0" Grid.Column="2" Margin="5" Click="btnNouTicket_Click">Afegir Ticket</Button>
+
+                <Button x:Name="btnModificarLinia" Grid.Row="0" Grid.Column="0" Margin="5" Click="btnModificarLinia_Click">Modificar Linia</Button>
+                <Button x:Name="btnModificarTicket" Grid.Row="1" Grid.Column="0" Margin="5" Click="btnModificarTicket_Click">Modificar Ticket</Button>
+            </Grid>
+        </Grid>
+    </GroupBox>
+</Page>
